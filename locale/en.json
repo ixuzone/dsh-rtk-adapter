@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "RTK Command Suggestions",
+    "description": "Suggests rtk-filtered shell commands without executing them; DSH's bash tool retains execution and permission controls."
+  }
+}

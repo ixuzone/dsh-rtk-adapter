@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "RTK 命令建议",
+    "description": "只建议经 rtk 过滤的命令，不执行命令；实际执行与权限控制仍由 DSH 的 bash 工具负责。"
+  }
+}

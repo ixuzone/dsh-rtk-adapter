@@ -1,0 +1,26 @@
+{
+  "name": "@local/dsh-rtk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Suggests rtk-filtered commands while keeping shell execution in DSH's bash tool.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "LICENSE"],
+  "scripts": {
+    "test": "node selftest.mjs && node edge-test.mjs",
+    "test:integration": "node integration-test.mjs",
+    "test:provider": "node provider-test.mjs",
+    "test:all": "npm test && npm run test:integration && npm run test:provider"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": "^0.2.1-alpha.2"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

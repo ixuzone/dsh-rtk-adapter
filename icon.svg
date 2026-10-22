@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="RTK output filter">
+  <rect x="3" y="8" width="58" height="48" rx="10" fill="#1f2933"/>
+  <path d="M13 21.5l8.5 7.5-8.5 7.5" fill="none" stroke="#7ee787" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 17.5h22.5l-8.8 14v13.2l-5 3.8V31.5L28 17.5z" fill="#4d9fff"/>
+</svg>

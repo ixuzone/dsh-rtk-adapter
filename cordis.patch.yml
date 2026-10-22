@@ -1,0 +1,3 @@
+- insert:
+    - id: rtk-adapter
+      name: '@local/dsh-rtk'
