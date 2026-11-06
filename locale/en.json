@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "RTK Command Suggestions",
-    "description": "Suggests rtk-filtered shell commands without executing them; DSH's bash tool retains execution and permission controls."
+    "title": "RTK Integration",
+    "description": "Brings rtk into DSH so agents can rewrite noisy shell commands into rtk equivalents, filtering output to save tokens. The rtk_rewrite tool only returns the suggested command; execution, approvals and sandboxing stay with DSH's bash tool."
   }
 }

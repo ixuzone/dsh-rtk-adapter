@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "RTK 命令建议",
-    "description": "只建议经 rtk 过滤的命令，不执行命令；实际执行与权限控制仍由 DSH 的 bash 工具负责。"
+    "title": "RTK 接入",
+    "description": "让 DSH 接入 rtk，使 Agent 能把噪声较大的 shell 命令改写为 rtk 版本，并在执行时过滤输出、减少 token 消耗。rtk_rewrite 只返回建议命令；实际执行、审批与沙箱仍由 DSH 的 bash 工具负责。"
   }
 }

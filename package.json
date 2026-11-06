@@ -1,17 +1,39 @@
 {
-  "name": "@local/dsh-rtk",
-  "version": "1.0.0",
-  "private": true,
+  "name": "@ixuzone/dsh-rtk-adapter",
+  "version": "2.0.0",
   "type": "module",
-  "description": "Suggests rtk-filtered commands while keeping shell execution in DSH's bash tool.",
+  "description": "DSH plugin that suggests rtk command rewrites (via `rtk rewrite`) while keeping shell execution in DSH's bash tool, with an optional enforcement mode for rtk policy denials.",
   "license": "MIT",
+  "author": "ixuzone (https://github.com/ixuzone)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ixuzone/dsh-rtk-adapter.git"
+  },
+  "homepage": "https://github.com/ixuzone/dsh-rtk-adapter#readme",
+  "bugs": {
+    "url": "https://github.com/ixuzone/dsh-rtk-adapter/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "rtk",
+    "shell"
+  ],
   "exports": {
     ".": "./index.js",
     "./package.json": "./package.json",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
-  "files": ["index.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "LICENSE"],
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node selftest.mjs && node edge-test.mjs",
     "test:integration": "node integration-test.mjs",
@@ -22,5 +44,13 @@
     "node": ">=22",
     "dsh": "^0.2.1-alpha.2"
   },
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
 }
